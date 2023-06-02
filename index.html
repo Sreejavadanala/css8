@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .shape {
+            width: 150px;
+            height: 100px;
+            border: 2px solid green;
+        }
+
+        .sharp-ends {
+            border-radius: 0;
+        }
+
+        .semi-curve-ends {
+            border-radius: 10px / 10px;
+        }
+
+        .completely-curved {
+            border-radius: 50px / 90px;
+        }
+
+        .oval {
+            border-radius: 50% / 50%;
+        }
+
+        .curved-and-pointed {
+            border-radius: 10px 0 10px 0;
+        }
+          body {
+      text-align: center;
+    }
+    .list-container {
+      text-align: center;
+      display: inline-block;
+    }
+    </style>
+</head>
+<body>
+ <h1 style="text-decoration: underline; color: orange;">CSS TASK-8</h1>
+
+  <div class="list-container">
+    <div class="container">
+        <div class="shape semi-curve-ends"></div>
+        <div class="shape semi-curve-ends"></div>
+        <div class="shape completely-curved"></div>
+        <div class="shape semi-curve-ends"></div>
+        <div class="shape sharp-ends"></div>
+        <div class="shape completely-curved"></div>
+        <div class="shape oval"></div>
+        <div class="shape semi-curve-ends"></div>
+        <div class="shape curved-and-pointed"></div>
+    </div>
+      </div>
+</body>
+</html>
